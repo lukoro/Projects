@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<GridPane xmlns="http://javafx.com/javafx/17.0.1"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="org.example.tictaktoe.HelloController"
+          prefWidth="600" prefHeight="600"
+          fx:id="gridPane">
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="33.33"/>
+        <ColumnConstraints percentWidth="33.33"/>
+        <ColumnConstraints percentWidth="33.33"/>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="33.33"/>
+        <RowConstraints percentHeight="33.33"/>
+        <RowConstraints percentHeight="33.33"/>
+    </rowConstraints>
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <StackPane fx:id="c00" GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-border-color: black">
+
+    </StackPane>
+
+
+    <StackPane fx:id="c10" GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-border-color: black">
+
+    </StackPane>
+
+
+    <StackPane fx:id="c20" GridPane.columnIndex="2" GridPane.rowIndex="0" style="-fx-border-color: black">
+
+    </StackPane>
+
+    <StackPane fx:id="c01" GridPane.columnIndex="0" GridPane.rowIndex="1" style="-fx-border-color: black">
+
+    </StackPane>
+
+
+    <StackPane fx:id="c11" GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-border-color: black">
+
+    </StackPane>
+
+
+    <StackPane fx:id="c21" GridPane.columnIndex="2" GridPane.rowIndex="1" style="-fx-border-color: black">
+
+    </StackPane>
+
+    <StackPane fx:id="c02" GridPane.columnIndex="0" GridPane.rowIndex="2" style="-fx-border-color: black">
+
+    </StackPane>
+
+
+    <StackPane fx:id="c12" GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-border-color: black">
+
+    </StackPane>
+
+
+    <StackPane fx:id="c22" GridPane.columnIndex="2" GridPane.rowIndex="2" style="-fx-border-color: black">
+
+    </StackPane>
+
+
+</GridPane>
