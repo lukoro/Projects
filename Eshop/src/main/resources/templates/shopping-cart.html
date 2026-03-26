@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+    <link th:href="@{/main.css}" rel="stylesheet">
+</head>
+<body>
+
+<h2>Product list</h2>
+
+<section>
+
+    <div th:each="cartItem : ${shoppingCart.entrySet()}">
+        <h3 th:text="${cartItem.getKey().getProductName()}"></h3>
+        <span th:text="${cartItem.getValue()}"></span>
+        <a th:href="@{'/shopping-cart-add/' + ${cartItem.getKey().getId()}}">Add</a>
+        <a th:href="@{'/shopping-cart-remove/' + ${cartItem.getKey().getId()}}">Remove</a>
+    </div>
+
+</section>
+
+<section>
+    <a th:href="@{'checkout'}">Checkout</a>
+</section>
+</body>
+</html>
